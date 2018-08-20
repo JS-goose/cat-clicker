@@ -9,3 +9,6 @@
   width: 100%;
   grid-column-start: 2;
 }
+.counter {
+    text-align: center;
+}
