@@ -1,14 +1,14 @@
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
 }
-.title {
-  text-align: center;
+.cat_img1 {
+width: 100%;
+grid-row-start: 2;
 }
-.cat_img {
-  width: 100%;
-  grid-column-start: 2;
-}
-.counter {
-    text-align: center;
+.cat_img2 {
+    width: 100%;
+    grid-row-start: 2;
 }
