@@ -1,0 +1,7 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 3, 1fr;
+}
+.title {
+    text-align: center;
+}
