@@ -5,24 +5,29 @@
   grid-gap: 20px;
 }
 .title {
-  margin: 0;
-  padding: 0;
-  grid-column-start: 2;
-  border: 1px solid black;
+  text-align: center;
+  grid-column-start: 4;
+  grid-column: span 4;
+  border-bottom: 1px solid black;
 }
-.counter {
-  border: 1px solid black;
+.counter1 {
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  justify-content: center;
+}
+.counter2 {
+  display: grid;
   grid-column-start: 3;
   grid-row-start: 3;
+  justify-content: center;
 }
 .cat_img1 {
-  border: 1px solid black;
   width: 100%;
   grid-row-start: 2;
   grid-column-start: 2;
 }
 .cat_img2 {
-  border: 1px solid black;
   width: 100%;
   grid-row-start: 2;
   grid-column-start: 3;
