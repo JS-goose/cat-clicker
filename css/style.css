@@ -48,15 +48,18 @@
   font-size: 3em;
   padding-right: 2%;
 }
+#social :hover {
+  transform: scale(1.1);
+}
 a {
   color: black;
   text-decoration: none;
-}
-a:hover {
-  color: orange;
 }
 .trademark {
   font-size: 1.2em;
   justify-content: center;
   padding-left: 2%;
+}
+.trademark a:hover {
+  color: orangered;
 }
