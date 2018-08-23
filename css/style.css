@@ -32,3 +32,6 @@
   grid-row-start: 2;
   grid-column-start: 3;
 }
+.footer {
+  grid-row-start: 4; 
+}
