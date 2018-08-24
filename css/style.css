@@ -1,6 +1,7 @@
 :root {
   --modal-orange: rgb(248, 162, 3);
   --link-blue: rgba(3, 38, 83, 0.8);
+  --light-gray: rgb(211, 211, 211);
 }
 .wrapper {
   display: grid;
@@ -18,7 +19,7 @@
   text-align: center;
   grid-area: header;
   border-bottom: 3px solid var(--modal-orange);
-  background-color: lightgrey;
+  background-color: var(--light-gray);
   color: var(--link-blue);
 }
 /*            */
@@ -41,7 +42,7 @@
   padding: 5px;
 }
 .catSelection li:hover {
-  background-color: lightgrey;
+  background-color: var(--link-blue);
   border: 1px solid var(--modal-orange);
   cursor: pointer;
 }
@@ -65,6 +66,14 @@
   height: 100%;
 }
 /*        */
+/* Header */
+/*        */
+.clicks {
+  border-top: 5px solid var(--modal-orange);
+  background-color: var(--light-gray);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*        */
 /* Footer */
 /*        */
 
@@ -76,7 +85,7 @@
   grid-column: span 3;
   border-top: 3px solid var(--modal-orange);
   margin-top: 5.2%;
-  background-color: lightgrey;
+  background-color: var(--light-gray);
   width: 100%;
 }
 #social {
