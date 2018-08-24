@@ -45,6 +45,7 @@
   background-color: var(--link-blue);
   border: 1px solid var(--modal-orange);
   cursor: pointer;
+  color: var(--light-gray);
 }
 .catSelection_modal {
   border-top: 5px solid var(--modal-orange);
