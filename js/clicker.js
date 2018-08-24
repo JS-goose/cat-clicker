@@ -1,11 +1,10 @@
-let catImg1 = document.querySelector(".cat_img1");
-let clickCounter1 = document.querySelector(".numClicks1");
-let catImg2 = document.querySelector(".cat_img2");
-let clickCounter2 = document.querySelector(".numClicks2");
+// Constructor
+class Cat {
+  constructor (name, img) {
+    this.name = name;
+    this.img = img;
+    this.clicks = 0;
+  }
+}
 
-catImg1.addEventListener("click", function() {
-  clickCounter1.innerHTML ++;
-});
-catImg2.addEventListener("click", function() {
-  clickCounter2.innerHTML ++;
-});
+let gidget = new Cat('gidget', '../img/gidget.jpg');
