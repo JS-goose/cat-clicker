@@ -52,14 +52,16 @@
   transform: scale(1.1);
 }
 a {
-  color: black;
+  color: rgba(3, 38, 83, 0.8);
   text-decoration: none;
 }
 .trademark {
   font-size: 1.2em;
   justify-content: center;
   padding-left: 2%;
+
 }
 .trademark a:hover {
-  color: orangered;
+  color: rgb(10, 155, 223);
+  text-shadow: 1px 1px 1px black;
 }
