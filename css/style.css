@@ -1,3 +1,6 @@
+:root {
+  --modal-orange: rgb(248, 162, 3);
+}
 .wrapper {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
@@ -21,6 +24,25 @@
   grid-area: aside;
   grid-row: 2 / span 2;
   justify-content: center;
+  align-content: center;
+}
+.catSelection h1, ul {
+  padding: 20px;
+  list-style: none;
+}
+.catSelection li {
+  text-align: center;
+  padding: 5px;
+}
+.catSelection li:hover {
+  background-color: lightgrey;
+  border: 1px solid var(--modal-orange);
+  cursor: pointer;
+}
+.catSelection_modal {
+  border-top: 5px solid var(--modal-orange);
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .catDisplay {
   display: grid;
@@ -37,9 +59,9 @@
   justify-content: space-between;
   grid-row-start: 4;
   grid-column: span 3;
-  border-top: 1px solid black;
+  border-top: 3px solid var(--modal-orange);
   margin-top: 5.2%;
-  background-color: lightseagreen;
+  background-color: lightgrey;
   width: 100%;
 }
 #social {
