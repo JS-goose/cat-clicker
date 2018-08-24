@@ -11,6 +11,9 @@
   grid-gap: 20px;
   min-height: 100%;
 }
+/*        */
+/* Header */
+/*        */
 .title {
   text-align: center;
   grid-area: header;
@@ -18,6 +21,10 @@
   background-color: lightgrey;
   color: var(--link-blue);
 }
+/*            */
+/* Selection */
+/*          */
+
 .catSelection {
   display: grid;
   grid-area: aside;
@@ -44,6 +51,10 @@
   background-color: rgb(243, 243, 243);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+/*         */
+/* Display */
+/*         */
+
 .catDisplay {
   display: grid;
   grid-area: content;
@@ -53,6 +64,10 @@
   width: 100%;
   height: 100%;
 }
+/*        */
+/* Footer */
+/*        */
+
 .footer {
   display: flex;
   align-items: center;
