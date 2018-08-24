@@ -48,7 +48,6 @@
 }
 .catSelection_modal {
   border-top: 5px solid var(--modal-orange);
-  border-bottom: 5px solid var(--modal-orange);
   background-color: rgb(243, 243, 243);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
