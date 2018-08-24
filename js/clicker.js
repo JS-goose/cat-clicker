@@ -17,3 +17,10 @@ class Cat {
     this.numClicks++;
   }
 }
+
+catOne.addEventListener('click', function() {
+  const gidget = new Cat('Gidget', '../img/gidget.jpg');
+  imgDisplay.src = '../img/gidget.jpg';
+});
+
+
