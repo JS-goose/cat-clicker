@@ -54,7 +54,6 @@
 /*         */
 /* Display */
 /*         */
-
 .catDisplay {
   display: grid;
   grid-area: content;
@@ -65,12 +64,13 @@
   height: 100%;
 }
 /*        */
-/* Header */
+/* Clicks */
 /*        */
 .clicks {
   border-top: 5px solid var(--modal-orange);
   background-color: var(--light-gray);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 /*        */
 /* Footer */
