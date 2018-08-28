@@ -65,7 +65,7 @@ catThree.addEventListener("click", function() {
 });
 
 catFour.addEventListener("click", function() {
-  // Image courtesy of Lucija Ros on https://www.unsplash.com
+  // Image courtesy of Berkeli Alashov on https://www.unsplash.com
   ginger = new Cat("Ginger", "./img/ginger-berkeli-alashov-568352-min.jpg");
   imgDisplay.src = ginger.img;
   numClicks.innerHTML = 0;
@@ -75,5 +75,19 @@ catFour.addEventListener("click", function() {
   catClicker.onclick = function() {
     ginger.addClicks();
     numClicks.innerHTML = ginger.clicks;
+  };
+});
+
+catFive.addEventListener("click", function() {
+  // Image courtesy of Xenia Bogarova on https://www.unsplash.com
+  nala = new Cat("Nala", "./img/nala-xenia-bogarova-422041-min.jpg");
+  imgDisplay.src = nala.img;
+  numClicks.innerHTML = 0;
+  nala.clicks = 0;
+  catName.innerHTML = nala.name;
+
+  catClicker.onclick = function() {
+    nala.addClicks();
+    numClicks.innerHTML = nala.clicks;
   };
 });
