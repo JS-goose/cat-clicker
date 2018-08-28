@@ -1,5 +1,5 @@
 // Global Variables
-const numClicks = document.querySelector("#numClicks");
+let numClicks = document.querySelector("#numClicks");
 let catOne = document.querySelector(".gidget");
 let catTwo = document.querySelector(".bethany");
 let catThree = document.querySelector(".rocket");
@@ -18,18 +18,24 @@ class Cat {
 
   addClicks() {
     console.log("addClicks is working");
-    this.numClicks++;
+    this.clicks++;
   }
 }
 
-catOne.addEventListener('click', function() {
-  gidget = new Cat('Gidget', './img/gidget.jpg');
+catOne.addEventListener("click", function() {
+  let catClicker = document.querySelector(".imgDisplay");
+  gidget = new Cat("Gidget", "./img/gidget.jpg");
   imgDisplay.src = gidget.img;
   catName.innerHTML = gidget.name;
+
+  catClicker.addEventListener("click", function() {
+    gidget.addClicks();
+    numClicks.innerHTML = gidget.clicks;
+  });
 });
 
-catTwo.addEventListener('click', function() {
-  bethany = new Cat('Bethany', './img/bethany.jpg')
+catTwo.addEventListener("click", function() {
+  bethany = new Cat("Bethany", "./img/bethany.jpg");
   imgDisplay.src = bethany.img;
   catName.innerHTML = bethany.name;
 });
