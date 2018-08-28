@@ -26,6 +26,7 @@ catOne.addEventListener("click", function() {
   let catClicker = document.querySelector(".imgDisplay");
   gidget = new Cat("Gidget", "./img/gidget.jpg");
   imgDisplay.src = gidget.img;
+  numClicks.innerHTML = 0;
   catName.innerHTML = gidget.name;
 
   catClicker.addEventListener("click", function() {
@@ -35,7 +36,14 @@ catOne.addEventListener("click", function() {
 });
 
 catTwo.addEventListener("click", function() {
+  let catClicker = document.querySelector(".imgDisplay");
   bethany = new Cat("Bethany", "./img/bethany.jpg");
   imgDisplay.src = bethany.img;
+  numClicks.innerHTML = 0;
   catName.innerHTML = bethany.name;
+
+  catClicker.addEventListener("click", function() {
+    bethany.addClicks();
+    numClicks.innerHTML = bethany.clicks;
+  });
 });
