@@ -27,6 +27,7 @@ catOne.addEventListener("click", function() {
   gidget = new Cat("Gidget", "./img/gidget.jpg");
   imgDisplay.src = gidget.img;
   numClicks.innerHTML = 0;
+  gidget.clicks = 0;
   catName.innerHTML = gidget.name;
 
   catClicker.addEventListener("click", function() {
@@ -40,6 +41,7 @@ catTwo.addEventListener("click", function() {
   bethany = new Cat("Bethany", "./img/bethany.jpg");
   imgDisplay.src = bethany.img;
   numClicks.innerHTML = 0;
+  bethany.clicks = 0;
   catName.innerHTML = bethany.name;
 
   catClicker.addEventListener("click", function() {
