@@ -63,3 +63,17 @@ catThree.addEventListener("click", function() {
     numClicks.innerHTML = rocket.clicks;
   };
 });
+
+catFour.addEventListener("click", function() {
+  // Image courtesy of Lucija Ros on https://www.unsplash.com
+  ginger = new Cat("Ginger", "./img/ginger-berkeli-alashov-568352-min.jpg");
+  imgDisplay.src = ginger.img;
+  numClicks.innerHTML = 0;
+  ginger.clicks = 0;
+  catName.innerHTML = ginger.name;
+
+  catClicker.onclick = function() {
+    ginger.addClicks();
+    numClicks.innerHTML = ginger.clicks;
+  };
+});
