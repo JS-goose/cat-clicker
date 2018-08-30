@@ -14,7 +14,7 @@ class Cat {
   constructor(name, img) {
     this.name = name;
     this.img = img;
-    this.clicks = 0;
+    this.clicks = "";
   }
 
   addClicks() {
@@ -26,8 +26,8 @@ catOne.addEventListener("click", function() {
   // Image courtesy of Erik-Jan Leusink on https://www.unsplash.com
   gidget = new Cat("Gidget", "./img/gidget-min.jpg");
   imgDisplay.src = gidget.img;
-  numClicks.innerHTML = 0;
-  gidget.clicks = 0;
+  gidget.clicks;
+  // numClicks.innerHTML = gidget.clicks;
   catName.innerHTML = gidget.name;
 
   catClicker.onclick = function() {
@@ -40,8 +40,8 @@ catTwo.addEventListener("click", function() {
   // Image courtesy of Gabriel Rodriguez on https://www.flickr.com/photos/chewie/2290467335
   bethany = new Cat("Bethany", "./img/bethany-min.jpg");
   imgDisplay.src = bethany.img;
-  numClicks.innerHTML = 0;
-  bethany.clicks = 0;
+  bethany.clicks;
+  // numClicks.innerHTML = bethany.clicks;
   catName.innerHTML = bethany.name;
 
   catClicker.onclick = function() {
