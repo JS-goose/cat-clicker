@@ -13,7 +13,7 @@ Fork or download the repo and once saved locally open up `index.html` in your fa
 * On load, the image displayed is a placeholder and will not count clicks
 * Choose a cat from the left menu
 * Click on the photo of your selected cat to incriment your count
-* Count is reset upon selecting another cat (for now)
+* Count is not reset upon selecting another cat
 
 # Required Dependencies 
 * There are no required dependencies.
