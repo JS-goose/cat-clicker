@@ -14,7 +14,7 @@ class Cat {
   constructor(name, img) {
     this.name = name;
     this.img = img;
-    this.clicks = "";
+    this.clicks = 0;
   }
 
   addClicks() {
@@ -22,12 +22,11 @@ class Cat {
   }
 }
 
+gidget = new Cat("Gidget", "./img/gidget-min.jpg");
 catOne.addEventListener("click", function() {
   // Image courtesy of Erik-Jan Leusink on https://www.unsplash.com
-  gidget = new Cat("Gidget", "./img/gidget-min.jpg");
   imgDisplay.src = gidget.img;
-  gidget.clicks;
-  // numClicks.innerHTML = gidget.clicks;
+  numClicks.innerHTML = gidget.clicks;
   catName.innerHTML = gidget.name;
 
   catClicker.onclick = function() {
@@ -36,12 +35,11 @@ catOne.addEventListener("click", function() {
   };
 });
 
+bethany = new Cat("Bethany", "./img/bethany-min.jpg");
 catTwo.addEventListener("click", function() {
   // Image courtesy of Gabriel Rodriguez on https://www.flickr.com/photos/chewie/2290467335
-  bethany = new Cat("Bethany", "./img/bethany-min.jpg");
   imgDisplay.src = bethany.img;
-  bethany.clicks;
-  // numClicks.innerHTML = bethany.clicks;
+  numClicks.innerHTML = bethany.clicks;
   catName.innerHTML = bethany.name;
 
   catClicker.onclick = function() {
@@ -50,12 +48,11 @@ catTwo.addEventListener("click", function() {
   };
 });
 
+rocket = new Cat("Rocket", "./img/rocket-lucija-ros-536041-min.jpg");
 catThree.addEventListener("click", function() {
   // Image courtesy of Lucija Ros on https://www.unsplash.com
-  rocket = new Cat("Rocket", "./img/rocket-lucija-ros-536041-min.jpg");
   imgDisplay.src = rocket.img;
-  numClicks.innerHTML = 0;
-  rocket.clicks = 0;
+  numClicks.innerHTML = rocket.clicks;
   catName.innerHTML = rocket.name;
 
   catClicker.onclick = function() {
@@ -64,12 +61,11 @@ catThree.addEventListener("click", function() {
   };
 });
 
+ginger = new Cat("Ginger", "./img/ginger-berkeli-alashov-568352-min.jpg");
 catFour.addEventListener("click", function() {
   // Image courtesy of Berkeli Alashov on https://www.unsplash.com
-  ginger = new Cat("Ginger", "./img/ginger-berkeli-alashov-568352-min.jpg");
   imgDisplay.src = ginger.img;
-  numClicks.innerHTML = 0;
-  ginger.clicks = 0;
+  numClicks.innerHTML = ginger.clicks;
   catName.innerHTML = ginger.name;
 
   catClicker.onclick = function() {
@@ -78,12 +74,11 @@ catFour.addEventListener("click", function() {
   };
 });
 
+nala = new Cat("Nala", "./img/nala-xenia-bogarova-422041-min.jpg");
 catFive.addEventListener("click", function() {
   // Image courtesy of Xenia Bogarova on https://www.unsplash.com
-  nala = new Cat("Nala", "./img/nala-xenia-bogarova-422041-min.jpg");
   imgDisplay.src = nala.img;
-  numClicks.innerHTML = 0;
-  nala.clicks = 0;
+  numClicks.innerHTML = nala.clicks;
   catName.innerHTML = nala.name;
 
   catClicker.onclick = function() {
