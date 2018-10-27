@@ -8,7 +8,8 @@ The live, playable game can be found [here](https://js-goose.github.io/cat-click
 
 I chose something simple and easy on the eyes as I'm not the best designer. I feel as though the layout works well and has a natural flow to it.
 
-#Example of Play
+# Example of Play
+
 ![alt text](https://github.com/mepda/cat-clicker/blob/master/img/example.png?raw=true)
 
 # Playing Locally
