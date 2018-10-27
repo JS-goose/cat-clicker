@@ -115,3 +115,57 @@ a {
   color: rgb(10, 155, 223);
   text-shadow: 1px 1px 1px black;
 }
+
+/* media queries for mobile devices 
+(portait view on most phones and 
+landscape view on smaller phones. 
+Larger phones will still get the desktop version on landscape) */
+
+@media only screen and (max-width: 768px) {
+  .wrapper, .catSelection {
+    display: block;
+  }
+
+  .title {
+    padding: 1rem;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .title h1, .catSelection_modal h1, ul, .instructions h1, ol, #catName h2, .footer {
+    margin: 0;
+  }
+
+  .instructions h1, .catSelection_modal h1 {
+    text-align: center;
+  }
+
+  ol {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+
+  .catSelection ol li {
+    text-align: left;
+  }
+
+  .catDisplay {
+    background-color: var(--light-gray);
+  }
+  #catName {
+    text-align: center;
+  }
+
+  .catDisplay img {
+    width: 100%;
+  }
+
+  .clicks {
+    font-size: 1.4rem;
+  }
+
+  .trademark h2, #social {
+    font-size: 1rem;
+  }
+}
