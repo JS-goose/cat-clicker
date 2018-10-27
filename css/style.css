@@ -40,6 +40,7 @@
 .catSelection li {
   text-align: center;
   padding: 5px;
+  border: 1px solid transparent;
 }
 .catItem:hover {
   background-color: var(--link-blue);
