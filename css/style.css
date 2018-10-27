@@ -121,6 +121,8 @@ a {
 landscape view on smaller phones. 
 Larger phones will still get the desktop version on landscape) */
 
+/* completed fir first PR for hacktoberfest */
+
 @media only screen and (max-width: 768px) {
   .wrapper, .catSelection {
     display: block;
