@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -24,52 +27,61 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <section class="title">
-            <h1>Cat Clicker App</h1>
+            <div class="text-center">
+                <h1>Cat Clicker App</h1>
+            </div>
         </section>
+        <div class="row">
+            <div class="col-md-3">
 
-        <section class="catSelection">
-            <aside class="catSelection_modal">
-                <h1>Choose Your Cat:</h1>
-                <ul>
-                    <li class="catItem gidget">
-                        Gidget
-                    </li>
-                    <li class="catItem bethany">
-                        Bethany
-                    </li>
-                    <li class="catItem rocket">
-                        Rocket
-                    </li>
-                    <li class="catItem ginger">
-                        Ginger
-                    </li>
-                    <li class="catItem nala">
-                        Nala
-                    </li>
-                </ul>
-            </aside>
 
-            <aside class="instructions">
-                <h1>Instructions:</h1>
-                <ol>
-                    <li>No clicks recorded until you choose a cat</li>
-                    <li>Choose a cat to click from the above menu</li>
-                    <li>Click the cat image to increment the count</li>
-                    <li>Count does not reset when changing cats </li>
-                </ol>
-            </aside>
-        </section>
+                <section class="catSelection">
+                    <aside class="catSelection_modal">
+                        <h1>Choose Your Cat:</h1>
+                        <ul>
+                            <li class="catItem gidget">
+                                Gidget
+                            </li>
+                            <li class="catItem bethany">
+                                Bethany
+                            </li>
+                            <li class="catItem rocket">
+                                Rocket
+                            </li>
+                            <li class="catItem ginger">
+                                Ginger
+                            </li>
+                            <li class="catItem nala">
+                                Nala
+                            </li>
+                        </ul>
+                    </aside>
 
-        <section class="catDisplay">
-            <h1 id="catName"></h1>
-            <!-- Placeholder image courtesy of Q'AILA on https://www.unsplash.com -->
-            <img src="./img/placeholder.jpg" alt="an image of a cat" class="imgDisplay" id="catClicker">
+                    <aside class="instructions">
+                        <h1>Instructions:</h1>
+                        <ol>
+                            <li>No clicks recorded until you choose a cat</li>
+                            <li>Choose a cat to click from the above menu</li>
+                            <li>Click the cat image to increment the count</li>
+                            <li>Count does not reset when changing cats </li>
+                        </ol>
+                    </aside>
+                </section>
+            </div>
+            <div class="col-md-9">
 
-            <article class="clicks">
-                <p>Number of clicks: <span id="numClicks"></span></p>
-            </article>
-        </section>
 
+                <section class="catDisplay">
+                    <h1 id="catName"></h1>
+                    <!-- Placeholder image courtesy of Q'AILA on https://www.unsplash.com -->
+                    <img src="./img/placeholder.jpg" alt="an image of a cat" class="imgDisplay" id="catClicker">
+
+                    <article class="clicks">
+                        <p>Number of clicks: <span id="numClicks"></span></p>
+                    </article>
+                </section>
+            </div>
+        </div>
         <footer class="footer">
             <article class="trademark">
                 <h2>Built by me,
@@ -87,6 +99,7 @@
                     <i class="fab fa-twitter-square"></i>
                 </a>
             </article>
+
         </footer>
 
         <script src="./js/clicker.js" async defer></script>

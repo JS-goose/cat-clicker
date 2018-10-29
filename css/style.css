@@ -4,12 +4,6 @@
   --light-gray: rgb(211, 211, 211);
 }
 .wrapper {
-  display: grid;
-  grid-template-areas: "header header header"
-                       "aside  content content"
-                       "aside  content content"
-                       "footer footer footer";
-  grid-gap: 20px;
   min-height: 100%;
 }
 /*        */
@@ -27,13 +21,9 @@
 /*          */
 
 .catSelection {
-  display: grid;
-  grid-area: aside;
-  grid-row: 2 / span 2;
-  justify-content: center;
-  align-content: center;
 }
-.catSelection h1, ul {
+.catSelection h1,
+ul {
   padding: 20px;
   list-style: none;
 }
@@ -48,7 +38,8 @@
   cursor: pointer;
   color: var(--light-gray);
 }
-.catSelection_modal, .instructions {
+.catSelection_modal,
+.instructions {
   border-top: 5px solid var(--modal-orange);
   background-color: rgb(243, 243, 243);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -57,11 +48,6 @@
 /* Display */
 /*         */
 .catDisplay {
-  display: grid;
-  grid-area: content;
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 2;
-  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -77,6 +63,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
   height: 60px;
+  width: 650px;
 }
 /*        */
 /* Footer */
@@ -110,7 +97,6 @@ a {
   font-size: 1.1em;
   justify-content: center;
   padding-left: 2%;
-
 }
 .trademark a:hover {
   color: rgb(10, 155, 223);
