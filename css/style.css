@@ -31,7 +31,15 @@
   grid-area: aside;
   grid-row: 2 / span 2;
   justify-content: center;
+  /* The .catSelection itself is the `aside` in the .wrapper grid above. If the
+   * value below is `center`, this will shift up and down as the `content` grid
+   * section adjusts in height, e.g. the photo for Bethany is taller, ergo this
+   * section will shift down.
   align-content: center;
+   *
+   * a value of `start` will keep this flush top.
+   */
+  align-content: start;
 }
 .catSelection h1, ul {
   padding: 20px;
