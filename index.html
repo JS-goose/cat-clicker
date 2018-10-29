@@ -14,51 +14,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="wrapper">
+    <section class="wrapper">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="title">
+        <section class="title">
             <h1>Cat Clicker App</h1>
-        </div>
+        </section>
 
-        <div class="counter1">
-            <h1>Cat Image 1</h1>
-            <h2>Number of Clicks: <span class="numClicks1">0</span></h2>
-        </div>
-        <div class="counter2">
-            <h1>Cat Image 2</h1>
-            <h2>Number of Clicks: <span class="numClicks2">0</span></h2>
-        </div>
-        <!-- <section class="cats">
-            <article>
-                <img src="./img/erik-jan-leusink-561776-unsplash-min.jpg" alt="a photo of a pretty cat" class="cat_img1">
+        <section class="catSelection">
+            <aside class="catSelection_modal">
+                <h1>Choose Your Cat:</h1>
+                <ul>
+                    <li class="gidget">
+                        Gidget
+                    </li>
+                    <li class="bethany">
+                        Bethany
+                    </li>
+                    <li class="rocket">
+                        Rocket
+                    </li>
+                    <li class="ginger">
+                        Ginger
+                    </li>
+                    <li class="nala">
+                        Nala
+                    </li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="catDisplay">
+            <h1 id="catName"></h1>
+            <img src="" alt="an image of a cat" class="imgDisplay" id="catClicker">
+
+            <article class="clicks">
+                <p>Number of clicks: <span id="numClicks">0</span></p>
             </article>
+        </section>
 
-            <article>
-                <img src="./img/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0.jpg" alt="a cat hiding behind a wall"
-                    class="cat_img2">
+        <footer class="footer">
+            <article class="trademark">
+                <h2>Built by me, 
+                    <a href="https://www.powerofgoose.com" target="_blank">Jonathan Sexton</a> &copy 2018
+                </h2>
             </article>
-        </section> -->
-        <div class="cat_img1">
-                <img src="./img/erik-jan-leusink-561776-unsplash-min.jpg" alt="a photo of a pretty cat" height="496">
-                <caption>Thanks to <a href="https://unsplash.com/photos/IbPxGLgJiMI" target="_blank">Erik-Jan Leusink</a> for the photo.</caption>
-            </div>
-
-            <div class="cat_img2">
-                <img src="./img/kixazxoJ2ufl3ACj2I85Xsy-Rfog97BM75ZiLaX02KgeYramAEqlEHqPC3rKqdQj4C1VFnXXryadFs1J9A=s0.jpg" alt="a cat hiding behind a wall">
-                <caption>Thanks to <a href="https://www.flickr.com/photos/chewie/2290467335" target="_blank">chewie</a> for the photo.</caption>
-            </div>
-
-        <footer>
-
+            <article id="social">
+                <a href="https://github.com/JS-goose" target="_blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jj-goose/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/jj_goose" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </article>
         </footer>
 
         <script src="./js/clicker.js" async defer></script>
-    </div>
+    </section>
 </body>
 
 </html>
